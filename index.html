@@ -14,17 +14,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="js/jquery.svg3dtagcloud.min.js"></script>
     <script src='js/jquery.svg3dtagcloud.js'></script>
-
     <script>
-
-    	$( document ).ready( function() {
-
+    	$(document).ready(function() {
             var entries = [ 
-                
                 { label: 'Twitter', url: 'http://twitter.com/shawnjbeaton', target: '_blank' },
                 { label: 'Instagram', url: 'http://instagram.com/shawnjbeaton', target: '_blank' },
                 { label: 'LinkedIn', url: 'https://www.linkedin.com/in/shawn-beaton-b83958171/', target: '_blank' },
@@ -77,16 +72,11 @@
                 tooltipTextAnchor: 'left',
                 tooltipDiffX: 0,
                 tooltipDiffY: 10
-
             };
-
-            var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
-            $( '#holder' ).svg3DTagCloud( settings );
-
-		} );
-        
-    </script>
-
+            var svg3DTagCloud = new SVG3DTagCloud(document.getElementById('holder'), settings);
+            $('#holder').svg3DTagCloud(settings);
+		});
+	</script>
 </head>
 <body>
 <div class="loader">
@@ -100,49 +90,40 @@
 </div>
 <div class="main">
 <nav class="navbar navbar-expand-sm navbar-light justify-content-end bg-warning w-100" id="navbar">
-<!--   <h1 class="display-4 text-dark text-left navtext">Shawn Beaton</h1>-->
-<!--   <a href="index.html"><img class="navimg" src="img/shawnbeaton.png"></a>-->
-    <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle Navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-around" id="nav-content">   
         <ul class="navbar-nav">
-            <li class="nav-item home mx-auto ">
+            <li class="nav-item home mx-auto" title="Home">
             <a class="nav-link float-right home" href="#home">Home</a>
             </li>
-            <li class="nav-item mx-auto">
+            <li class="nav-item mx-auto" title="Skills">
             <a class="nav-link float-right skills" href="#skills">Skills</a>
             </li>
-            <li class="nav-item mx-auto">
+            <li class="nav-item mx-auto" title="Portfolio">
             <a class="nav-link float-right portfolio" href="#portfolio">Portfolio</a>
             </li>
-            <li class="nav-item mx-auto">
+            <li class="nav-item mx-auto" title="About">
             <a class="nav-link float-right about1" href="#about">About</a>
             </li>
-            <li class="nav-item mx-auto">
+            <li class="nav-item mx-auto" title="Contact">
             <a class="nav-link float-right contact" href="#contact">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
-
-   
 <main>
   <header class="text-dark" id="home">
     <img class="border border-3 border-warning rounded-circle" src="img/headshot.png">
     <h1 class="d-flex justify-content-center">Shawn Beaton</h1>
 </header>  
-
     <ul class="navicons d-flex p-0 flex-row align-center justify-content-around">
         <a class="a" href="#home"><img href="#home" class="iconimg" src="img/icons/home.png" alt="homeicon">
-        <p class="spantext">Home</p></a>
-        
+        <p class="spantext" title="Home">Home</p></a>
         <a class="a" href="#skills"><img href="#skills" class="iconimg" src="img/icons/skills.png" alt="skillsicon"><p class="spantext">Skills</p></a>
-        
         <a class="a" href="#portfolio"><img href="#portfolio" class="iconimg" src="img/icons/portfolio.png" alt="portfolioicon"><p class="spantext">Portfolio</p></a>
-        
         <a class="a" href="#about"><img href="#about" class="iconimg" src="img/icons/aboutme.png" alt="aboutmeicon"><p class="spantext">About</p></a>
-        
         <a class="a" href="#contact"><img href="#contact" class="iconimg" src="img/icons/contact.png" alt="contacticon"><p class="spantext">Contact</p></a>
     </ul>
 <div class="spherediv">
@@ -151,7 +132,6 @@
      <div id='holder'></div>
  </div>
 </div>
- 
 <h2 class="text-center size-1 mt-5" id="skills">Skills</h2>
 <table class="mx-auto">
     <tr class="row">
@@ -195,27 +175,23 @@
         </td>
     </tr>
 </table>   
-   
-<div class="beige shadow">
-<h2 class="text-center size-1 hello" id="portfolio">Personal Portfolio</h2>
-
+<div class="beige shadow"><h2 class="text-center size-1 hello" id="portfolio">Personal Portfolio</h2>
 <h4 class="text-center">Client Sites</h4>
 <div class="cards mx-auto">
  <div class="row porfrow d-flex">
     <div class="beige card card1 border-0 col-12 col-sm-6 col-lg-3 ">
-              <a href="https://beat0154.github.io/Rideau-Osgoode-Martial-Arts/" target="_blank">
+              <a href="https://beat0154.github.io/Rideau-Osgoode-Martial-Arts/" target="_blank" title="Rideau Osgoode">
                   <div class="overlay">
                       <img class="card-img-top" src="img/karate.png" alt="Card image cap">
                   </div>
               </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Rideau Osgoode</h5>
-                <p class="card-text">A website for my dad's Karate club.</p>
-                
+                <p class="card-text">A website for my dad's Karate club.</p> 
           </div>
     </div>
     <div class="beige card card2 border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="https://beat0154.github.io/student-portfolio/" target="_blank">
+          <a href="https://beat0154.github.io/student-portfolio/" target="_blank" title="Student Portfolio">
           <div class="overlay">
           <img class="card-img-top" src="img/taylor.png" alt="Card image cap">
           </div>
@@ -226,18 +202,18 @@
           </div>
     </div>
     <div id="jsfix" class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="https://beat0154.github.io/Octopus-JR/" target="_blank">
+          <a href="https://beat0154.github.io/Octopus-JR/" target="_blank" title="Octopus Jr.">
           <div class="overlay">
           <img class="card-img-top" src="img/octopusjr.png" alt="Card image cap">
           </div>
         </a>
           <div class="card-body text-center">
-                <h5 class="card-title mt-3">Octopus Jr</h5>
-                <p class="card-text">A webpage I created for an iphone game available in the app store.</p>
+                <h5 class="card-title mt-3">Octopus Jr.</h5>
+                <p class="card-text">A webpage I created for an iPhone game available in the App Store.</p>
           </div>
     </div>
     <div id="jsfix" class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="https://beat0154.github.io/Caleb-Clifford/" target="_blank">
+          <a href="https://beat0154.github.io/Caleb-Clifford/" target="_blank" title="Draft Caleb Clifford">
              <div class="overlay">
                  <img class="card-img-top" src="img/caleb.png" alt="Card image cap"></div>
         </a>
@@ -249,29 +225,29 @@
 </div>
 </div>
     </div>
-<h4 class="mt-5 text-center">SVG and Raphael.js Projects</h4>
+<h4 class="mt-5 text-center">SVG And Raphael.js Projects</h4>
 <div class="cards mx-auto">
  <div class="row porfrow">
        <div id="jsfix" class="card card1 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="https://beat0154.github.io/Lab10SVG/" target="_blank">
+          <a href="https://beat0154.github.io/Lab10SVG/" target="_blank" title="SVG Animations">
           <div class="overlay">
           <img class="card-img-top" src="img/svg.png" alt="Card image cap">
               </div>
         </a>
           <div class="card-body text-center">
-                <h5 class="card-title mt-3">SVG animations</h5>
-                <p class="card-text">SVG animations triggered by buttons with keyframes and a hover effect from css.</p>
+                <h5 class="card-title mt-3">SVG Animations</h5>
+                <p class="card-text">SVG animations triggered by buttons with keyframes and a hover effect from CSS.</p>
           </div>
     </div>
     <div id="jsfix" class="card card1 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="https://beat0154.github.io/tonys-gym/" target="_blank">
+          <a href="https://beat0154.github.io/tonys-gym/" target="_blank" title="Tony's Gym">
           <div class="overlay">
           <img class="card-img-top" src="img/tony.png" alt="Card image cap">
               </div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Tony's Gym</h5>
-                <p class="card-text">A SVG and javascript project I made for my boss. </p>
+                <p class="card-text">An SVG and JavaScript project I made for my boss.</p>
           </div>
     </div>
     <div class="card card2 border-0 col-12 col-sm-6 col-lg-3">
@@ -282,8 +258,7 @@
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Clock</h5>
-                <p class="card-text">A realtime anolog clock created completely from scratch using raphael.js</p>
-                
+                <p class="card-text">A realtime anolog clock created completely from scratch using raphael.js!</p>
           </div>
     </div>
     <div class="card card3 border-0 col-12 col-sm-6 col-lg-3">
@@ -293,34 +268,29 @@
               </div>
         </a>
           <div class="card-body text-center">
-                <h5 class="card-title mt-3">Bouncing cube</h5>
-                <p class="card-text">Simple boucing cube animation created using raphael.js</p>
-                
+                <h5 class="card-title mt-3">Bouncing Cube</h5>
+                <p class="card-text">Simple boucing cube animation created using raphael.js!</p>
           </div>
     </div>
     <div id="jsfix" class="card card4 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="drum.html" target="_blank">
+          <a href="drum.html" target="_blank" title="Drum">
           <div class="overlay">
           <img class="card-img-top" src="img/drum.png" alt="Card image cap">
               </div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Drum</h5>
-                <p class="card-text">A playable drumset created using raphael.js</p>
-                
+                <p class="card-text">A playable drumset created using raphael.js!</p>
           </div>
     </div>
     </div>  
-    
  </div>
- 
- 
  <div class="beige shadow">
-    <h4 class="text-center pt-5" id="photoshop">Photoshop/Illustrator Artwork</h4>
+<h4 class="text-center pt-5" id="photoshop">Photoshop/Illustrator Artwork</h4>
 <div class="cards mx-auto">
  <div class="row porfrow d-flex">
     <div class="beige card card1 border-0 col-12 col-sm-6 col-lg-3 ">
-              <a href="logos.html#sens" target="_blank">
+              <a href="logos.html#sens" target="_blank" title="Ottawa Senators">
                   <div class="overlay">
                       <img class="card-img-top" src="img/logos/sens%20logo20.png" alt="Card image cap">
                   </div>
@@ -328,7 +298,6 @@
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Ottawa Senators</h5>
                 <p class="card-text">The Ottawa Senators logo made completely out of text.</p>
-                
           </div>
     </div>
     <div class="beige card card2 border-0 col-12 col-sm-6 col-lg-3 ">
@@ -374,58 +343,54 @@
           </div>
     </div>
     <div class="beige card border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="lab4.html" target="_blank">
+          <a href="lab4.html" target="_blank" title="Tesla Ad Billboard">
              <div class="overlay">
                  <img class="card-img-top" src="img/billboardfin.png" alt="Card image cap"></div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Tesla Ad Billboard</h5>
-                <p class="card-text">Creating a billboard advertisement for any company</p>
+                <p class="card-text">Creating a billboard advertisement for any company.</p>
           </div>
     </div>
     <div class="beige card border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="lab5.html" target="_blank">
+          <a href="lab5.html" target="_blank" title="Image Composition">
              <div class="overlay">
                  <img class="card-img-top" src="img/imgcomp.png" alt="Card image cap"></div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Image Compisition</h5>
-                <p class="card-text">Creating an image compisition using multiple images</p>
+                <p class="card-text">Creating an image compisition using multiple images.</p>
           </div>
     </div>
     <div class="beige card border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="lab8.html" target="_blank">
+          <a href="lab8.html" target="_blank" title="Pen Tracing Vector Images">
              <div class="overlay">
                  <img class="card-img-top" src="img/tracing%20pen.png" alt="Card image cap"></div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Pen Tracing Vector Images</h5>
-                <p class="card-text">Vector characters created in Illustrator by tracing with a pen tool </p>
+                <p class="card-text">Vector characters created in Illustrator by tracing with a pen tool.</p>
           </div>
     </div>
     <div class="beige card border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="lab9.html" target="_blank">
+          <a href="lab9.html" target="_blank" title="Fake Smartphone Company Logo">
              <div class="overlay">
                  <img class="card-img-top" src="img/smartphone.png" alt="Card image cap"></div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Fake Smartphone Company Logo</h5>
-                <p class="card-text">A logo created in Illustrator for a fake Smartphone Company</p>
+                <p class="card-text">A logo created in Illustrator for a fake Smartphone Company.</p>
           </div>
     </div>
 </div>
 </div>
     </div>
-
- 
-
 <h2 class="text-center size-1 hello">College Portfolio</h2>
-
 <h4 class="text-center">HTML + CSS Assignments</h4>
 <div class="cards mx-auto">
  <div class="row porfrow d-flex">
     <div class="card card1 border-0 col-12 col-sm-6 col-lg-3 ">
-              <a href="https://beat0154.github.io/travel-form/" target="_blank">
+              <a href="https://beat0154.github.io/travel-form/" target="_blank" title="Travel Form">
                   <div class="overlay">
                       <img class="card-img-top" src="img/travel.png" alt="Card image cap">
                   </div>
@@ -433,11 +398,10 @@
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Travel Form</h5>
                 <p class="card-text">A responsive form using media queries for an Airbnb for dogs.</p>
-                
           </div>
     </div>
     <div class="card card2 border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="https://beat0154.github.io/CSS-Assignment1/" target="_blank">
+          <a href="https://beat0154.github.io/CSS-Assignment1/" target="_blank" title="CSS Assignment">
           <div class="overlay">
           <img class="card-img-top" src="img/madnd.png" alt="Card image cap">
           </div>
@@ -448,7 +412,7 @@
           </div>
     </div>
     <div class="card card3 border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="https://beat0154.github.io/Midterm/" target="_blank">
+          <a href="https://beat0154.github.io/Midterm/" target="_blank" title="Midterm">
           <div class="overlay">
           <img class="card-img-top" src="img/dogs.png" alt="Card image cap">
           </div>
@@ -459,24 +423,23 @@
           </div>
     </div>
     <div class="card card4 border-0 col-12 col-sm-6 col-lg-3 ">
-          <a href="https://beat0154.github.io/html-css/" target="_blank">
+          <a href="https://beat0154.github.io/html-css/" target="_blank" title="HTML+CSS">
              <div class="overlay">
                  <img class="card-img-top" src="img/htmlcss.png" alt="Card image cap"></div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">HTML+CSS</h5>
-                <p class="card-text">My first website created from scratch using html5 and css3.</p>
+                <p class="card-text">My first website created from scratch using HTML5 and CSS3.</p>
           </div>
     </div>
 </div>
-    </div>
-
+	</div>
 <div class="beige shadow">
 <h4 class="pt-5 text-center">JavaScript Assignments</h4>
 <div class="cards mx-auto">
  <div class="row porfrow">
     <div class="beige card card1 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="https://beat0154.github.io/do-for-while-loops/" target="_blank">
+          <a href="https://beat0154.github.io/do-for-while-loops/" target="_blank" title="Do, While, &amp; For">
           <div class="overlay doforwhile">
           <img class="card-img-top" src="img/loops.png" alt="Card image cap">
               </div>
@@ -484,11 +447,10 @@
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Do, While, &amp; For</h5>
                 <p class="card-text">Some examples of do loops, do while loops and for loops.</p>
-                
           </div>
     </div>
     <div class="beige card card2 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="https://beat0154.github.io/Shopping-cart/" target="_blank">
+          <a href="https://beat0154.github.io/Shopping-cart/" target="_blank" title="Shopping Cart">
           <div class="overlay">
           <img class="card-img-top" src="img/cart.png" alt="Card image cap">
               </div>
@@ -500,35 +462,32 @@
           </div>
     </div>
     <div class="beige card card3 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="https://beat0154.github.io/jQuery/" target="_blank">
+          <a href="https://beat0154.github.io/jQuery/" target="_blank" title="jQuery Assignment">
           <div class="overlay">
           <img class="card-img-top" src="img/jquery.png" alt="Card image cap">
               </div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">jQuery Assignment</h5>
-                <p class="card-text">A reactive webpage demonstrating my jQuery abilities</p>
+                <p class="card-text">A reactive webpage demonstrating my jQuery abilities.</p>
                 
           </div>
     </div>
     <div class="beige card card4 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="https://beat0154.github.io/Form-Validation/" target="_blank">
+          <a href="https://beat0154.github.io/Form-Validation/" target="_blank" title="Form Validation">
           <div class="overlay">
           <img class="card-img-top" src="img/forms.png" alt="Card image cap">
               </div>
         </a>
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">Form Validation</h5>
-                <p class="card-text">A form that displays an error message if theres missing information.</p>
+                <p class="card-text">A form that displays an error message if there's missing information.</p>
           </div>
     </div>
         </div>
     </div>
     </div>     
-    
-    
-   <h2 class="text-center size-1 about" id="about">About Me</h2>
-
+	<h2 class="text-center size-1 about" id="about">About Me</h2>
 <div class="section">
     <div class="row card3 bgy">
         <p class="paragraph text-center h4 font-weight-normal">My name is Shawn Beaton. I grew up in Greely, a small village outside of the Capital of Canada. I was always a happy kid, I loved attention and loved making others happy.</p>
@@ -565,7 +524,7 @@
 <div class="form card4">   
 <h2 class="text-center size-1 m-0" id="contact">Contact for Hiring</h2>
 <h4 class="text-center">(Available for co-op placement starting April 2019)</h4>
-<a href="Shawns_%20Resume.pdf" target="_blank"><button class="mx-auto d-block m-0">My Resume</button></a>
+<a href="Shawns_%20Resume.pdf" target="_blank" title="My Resume"><button class="mx-auto d-block m-0">My Resume</button></a>
 
 <form id="form" onsubmit="validateProfile()" name="contact" class="mx-auto">
     <fieldset class="form-group">
@@ -593,19 +552,18 @@
     <span id="detailsalert" class="alert"></span>
         <textarea type="text" class="form-control" rows="4" id="details" name="details"></textarea>
     </fieldset>
-    <button id="submit" class="btn btn-secondary">Submit</button>
-    <button type="reset" class="btn btn-secondary">Reset</button>
-</form>
-<!--action="https://formspree.io/shawnjbeaton@gmail.com" method="POST" type="submit" value="send" -->
+    <button id="submit" class="btn btn-secondary" title="Submit">Submit</button>
+    <button type="reset" class="btn btn-secondary" title="Reset">Reset</button>
+	</form>
 </div>     
 </main>
 </div>
-<div class="b2t bg-warning text-center m-0"><a href="#home"><i class="fas fa-arrow-circle-up"></i>Back To the Top</a></div>
+<div class="b2t bg-warning text-center m-0" title="Back To The Top"><a href="#home"><i class="fas fa-arrow-circle-up"></i>Back To The Top</a></div>
 <footer>
     <div class="icons text-center d-flex flex-md-row flex-column bg-warning justify-content-around">
-        <a class="instagram" href="https://www.instagram.com/shawnjbeaton" target="_blank"><i class="fab mt-4 fa-2x fa-instagram"></i><span class="linktext">Instagram</span></a>
-        <a class="twitter" href="https://www.twitter.com/shawnjbeaton" target="_blank"><i class="fab fa-2x mt-4 fa-twitter"></i><span class="linktext">Twitter</span></a>
-        <a class="linkedin" href="https://www.linkedin.com/in/shawn-beaton-b83958171/" target="_blank"><i class="fab fa-2x mt-4 fa-linkedin"></i><span class="linktext">LinkedIn</span></a>
+        <a class="instagram" href="https://www.instagram.com/shawnjbeaton" target="_blank" title="Instagram"><i class="fab mt-4 fa-2x fa-instagram"></i><span class="linktext">Instagram</span></a>
+        <a class="twitter" href="https://www.twitter.com/shawnjbeaton" target="_blank" title="Twitter"><i class="fab fa-2x mt-4 fa-twitter"></i><span class="linktext">Twitter</span></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/shawn-beaton-b83958171/" target="_blank" title="LinkedIn"><i class="fab fa-2x mt-4 fa-linkedin"></i><span class="linktext">LinkedIn</span></a>
     </div>
 </footer>
 </body>
@@ -614,10 +572,7 @@ ScrollReveal().reveal('.card1', {distance: '200px', opacity: 0});
 ScrollReveal().reveal('.card2', {delay: 100, distance: '200px', opacity: 0});
 ScrollReveal().reveal('.card3', {delay: 200, distance: '200px', opacity: 0});
 ScrollReveal().reveal('.card4', {delay: 300, distance: '200px', opacity: 0});        </script>
-    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
-    <!-- Popper -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
-    <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
-
 </html>
